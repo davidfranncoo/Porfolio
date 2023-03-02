@@ -14,16 +14,24 @@ elemntos tendran estas configuraciones */
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(0, 0, 89);
 }
 .wrapper{
     /* ancho */
     width: 100vw;
     /* alto */
     height: 100vh;
-    background-color: cornflowerblue;
+    background-color: rgb(3, 43, 116);
     color:white 
 }
+header{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 1;
+}
 .navBar{
+   
     padding: 20px;
 }
 .brand{
@@ -56,4 +64,22 @@ list-style: none;
 .menu a:hover{
     background-color: aquamarine;
     color:black;
+}
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.main img{
+    width: 300px;
+    border: 7px solid aqua
+}
+.info-content2{
+    color:white
+}
+.info-content3{
+    color:white
 }
