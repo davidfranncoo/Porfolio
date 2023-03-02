@@ -1,0 +1,59 @@
+/* tipografia obtenida por google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* el * es el SELECTOR UNIVERSAL, va indicar todos los
+elemntos tendran estas configuraciones */
+*{
+    /* margin: espacio afuera del borde */
+    margin: 0;
+    /* espacio entre el borde y el contenido interior */
+    padding: 0;
+    /*  permite especificar el tamaño total del elemento
+     de manera más intuitiva y fácil de entender */
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+    /* ancho */
+    width: 100vw;
+    /* alto */
+    height: 100vh;
+    background-color: cornflowerblue;
+    color:white 
+}
+.navBar{
+    padding: 20px;
+}
+.brand{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.brand span{
+
+    color: aquamarine;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu a{
+    padding: 10px;
+    color:white;
+    /* quitamos el subrayado */
+    text-decoration: none;
+}
+.menu li{
+/* quitamos el pintito de los items */
+list-style: none;
+}
+/* para que al poner el mouse cambie de color */
+.menu a:hover{
+    background-color: aquamarine;
+    color:black;
+}
