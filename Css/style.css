@@ -14,20 +14,20 @@ elemntos tendran estas configuraciones */
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(0, 0, 89);
+    background-color: rgb(1, 014, 39);
 }
 .wrapper{
     /* ancho */
     width: 100vw;
     /* alto */
     height: 100vh;
-    background-color: rgb(3, 43, 116);
+    background-color: rgb(1, 14, 39);
     color:white 
 }
 header{
     position: sticky;
     top: 0;
-    background-color: black;
+    background-color: rgb(40, 40, 40);
     z-index: 1;
 }
 .navBar{
@@ -82,4 +82,33 @@ list-style: none;
 }
 .info-content3{
     color:white
+}
+.contacto_form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.contacto_form h4{
+    height: 10vh; 
+}
+.contacto_form input {
+    height: 5vh;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background: none;
+    color:#fff;
+    border:none;
+    border-bottom: 1px solid #fff;
+    
+}
+.contacto_form textarea{
+    height: 25vh;
+    padding: 10px 20px;
+    background: none;
+    color:#fff;
+    margin-bottom: 10px;
+    border:none;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+
 }
