@@ -1,5 +1,7 @@
 /* tipografia obtenida por google font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap');
+
 
 /* el * es el SELECTOR UNIVERSAL, va indicar todos los
 elemntos tendran estas configuraciones */
@@ -14,6 +16,7 @@ elemntos tendran estas configuraciones */
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     background-color: rgb(1, 014, 39);
 }
 .wrapper{
@@ -76,6 +79,11 @@ list-style: none;
 .main img{
     width: 300px;
     border: 7px solid aqua
+}
+.info-content h1{
+    font-size: 36px;
+    color:aqua;
+    font-weight:700;
 }
 .info-content2{
     color:white
