@@ -1,7 +1,7 @@
 /* tipografia obtenida por google font */
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); */
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 /* el * es el SELECTOR UNIVERSAL, va indicar todos los
 elemntos tendran estas configuraciones */
@@ -17,12 +17,16 @@ elemntos tendran estas configuraciones */
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    background-color: rgb(1, 014, 39);
+    background-color: #010e27;
 }
-.wrapper{
+h3{font-family: 'Roboto', sans-serif;
+
+}
+.wrapper,
+.portafolio-heading{
     /* ancho */
-    width: 100vw;
     /* alto */
+    width: 100vw;
     height: 100vh;
     background-color: rgb(1, 14, 39);
     color:white 
@@ -120,3 +124,38 @@ list-style: none;
     border-top: 1px solid #fff;
 
 }
+.portafolio-heading{
+    width: 100vw;
+    padding: 5em;
+}
+.portafolio-heading {
+font-size: 1.5em;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   background-color:#021e52 ;
+}
+.card_title{
+    margin-top: 15px;
+    
+}
+.card_img {
+    width: 250px;
+    height: 200px;
+    background-image: url("../img/paises.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .proyects_link{
+    display: flex;
+    margin-top: 15px;
+    width: 300px;
+    justify-content: space-around;
+
+   
+  }
+  .proyects_link a{
+    font-size: 50px;
+  }
