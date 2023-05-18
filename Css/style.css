@@ -21,6 +21,7 @@ body{
 }
 h3{font-family: 'Roboto', sans-serif;
 
+    /* font-size: clamp(4vh, 1.5em, 3em); */
 }
 .wrapper,
 .portafolio-heading{
@@ -31,6 +32,7 @@ h3{font-family: 'Roboto', sans-serif;
     background-color: rgb(1, 14, 39);
     color:white 
 }
+/* --------------MENU ------------------ */
 header{
     position: sticky;
     top: 0;
@@ -47,6 +49,7 @@ header{
 
     
 }
+/* brand es el titulo */
 .brand span{
 
     color: aquamarine;
@@ -64,7 +67,7 @@ header{
     text-decoration: none;
 }
 .menu li{
-/* quitamos el pintito de los items */
+/* quitamos el puntito de los items */
 list-style: none;
 }
 /* para que al poner el mouse cambie de color */
@@ -72,23 +75,50 @@ list-style: none;
     background-color: aquamarine;
     color:black;
 }
+
+
+/* ------------HOME-------------------- */
+
+
 .main{
+    border: 7px solid white;
     margin: 0 auto;
-    width: 80vw;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
 .main img{
-    width: 300px;
+    width: 100%;
+   
     border: 7px solid aqua
 }
+.info-content{
+    margin: 50px;
+}
 .info-content h1{
-    font-size: 36px;
+    
+    font-size: 30px;
     color:aqua;
     font-weight:700;
 }
+@media screen and (max-width: 426px) {
+    /* Estilos para tablets y dispositivos móviles */
+   .info-content h1 {
+      font-size: 1.5em; /* Disminuye el tamaño del título */
+    }
+    
+     h3 {
+      display:none; /* Disminuye el tamaño del subtítulo */
+    }
+    
+   
+  }
+
+
+
+
 .info-content2{
     color:white
 }
@@ -125,13 +155,16 @@ list-style: none;
 
 }
 .portafolio-heading{
+    display: flex;
     width: 100vw;
-    padding: 5em;
+    justify-content: space-around;
+    /* padding: 5em; */
 }
 .portafolio-heading {
 font-size: 1.5em;
 }
 .card{
+    width: 25vw;
     display: flex;
     flex-direction: column;
    align-items: center;
@@ -142,7 +175,7 @@ font-size: 1.5em;
     
 }
 .card_img {
-    width: 250px;
+    width: 100%;
     height: 200px;
     background-image: url("../img/paises.jpg");
     background-size: cover;
@@ -153,9 +186,13 @@ font-size: 1.5em;
     margin-top: 15px;
     width: 300px;
     justify-content: space-around;
+    
 
    
   }
   .proyects_link a{
+    /* width: 100%;
+    height: 100%; */
     font-size: 50px;
+    color:#fff;
   }
